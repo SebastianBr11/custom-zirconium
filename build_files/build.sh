@@ -13,7 +13,6 @@ cp -avf "/ctx/system"/. /
 
 # this installs a package from fedora repos
 dnf5 install -y \
-  texlive-scheme-full \
   tmux
 
 # Can't use zen-browser from Flathub, since it wouldn't work well with KeepassXC
