@@ -90,6 +90,10 @@ IsRuntime=false
 Branch=stable
 IsRuntime=false
 
+[Flatpak Preinstall org.pvermeer.WebAppHub]
+Branch=stable
+IsRuntime=false
+
 [Flatpak Preinstall org.zotero.Zotero]
 Branch=stable
 IsRuntime=false
