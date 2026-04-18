@@ -26,6 +26,10 @@ IsRuntime=false
 Branch=stable
 IsRuntime=false
 
+[Flatpak Preinstall org.gnome.Loupe]
+Branch=stable
+IsRuntime=false
+
 [Flatpak Preinstall com.nextcloud.desktopclient.nextcloud]
 Branch=stable
 IsRuntime=false
