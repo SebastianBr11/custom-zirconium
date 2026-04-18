@@ -12,7 +12,9 @@ cp -avf "/ctx/system"/. /
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux
+dnf5 install -y \
+  texlive-scheme-full \
+  tmux
 
 # Can't use zen-browser from Flathub, since it wouldn't work well with KeepassXC
 dnf5 -y copr enable sneexy/zen-browser
