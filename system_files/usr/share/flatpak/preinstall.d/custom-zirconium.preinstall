@@ -6,7 +6,15 @@ IsRuntime=true
 Branch=stable
 IsRuntime=true
 
+[Flatpak Preinstall org.gnome.baobab]
+Branch=stable
+IsRuntime=false
+
 [Flatpak Preinstall eu.betterbird.Betterbird]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall de.easyroam.easyroam]
 Branch=stable
 IsRuntime=false
 
@@ -31,6 +39,18 @@ Branch=stable
 IsRuntime=false
 
 [Flatpak Preinstall dev.diegovsky.Riff]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall com.github.flxzt.rnote]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall org.gnome.Showtime]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall org.gnome.SimpleScan]
 Branch=stable
 IsRuntime=false
 
