@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-cp -avf "/ctx/files"/. /
+cp -avf "/ctx/system"/. /
 
 ### Install packages
 
