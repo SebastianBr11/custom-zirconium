@@ -13,7 +13,7 @@ set -ouex pipefail
 dnf5 install -y tmux
 
 # Can't use zen-browser from Flathub, since it wouldn't work well with KeepassXC
-sudo dnf copr enable sneexy/zen-browser
+sudo dnf copr enable -y sneexy/zen-browser
 sudo dnf install -y zen-browser
 
 # Use a COPR Example:
