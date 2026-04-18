@@ -38,6 +38,10 @@ IsRuntime=false
 Branch=stable
 IsRuntime=false
 
+[Flatpak Preinstall com.github.PintaProject.Pinta]
+Branch=stable
+IsRuntime=false
+
 [Flatpak Preinstall com.protonvpn.www]
 Branch=stable
 IsRuntime=false
