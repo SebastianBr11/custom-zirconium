@@ -18,6 +18,10 @@ IsRuntime=false
 Branch=stable
 IsRuntime=false
 
+[Flatpak Preinstall com.github.tchx84.Flatseal]
+Branch=stable
+IsRuntime=false
+
 [Flatpak Preinstall io.github.tobagin.karere]
 Branch=stable
 IsRuntime=false
@@ -75,6 +79,10 @@ Branch=stable
 IsRuntime=false
 
 [Flatpak Preinstall dev.vencord.Vesktop]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall io.github.flattool.Warehouse]
 Branch=stable
 IsRuntime=false
 
