@@ -26,6 +26,10 @@ IsRuntime=false
 Branch=stable
 IsRuntime=false
 
+[Flatpak Preinstall it.mijorus.gearlever]
+Branch=stable
+IsRuntime=false
+
 [Flatpak Preinstall io.github.tobagin.karere]
 Branch=stable
 IsRuntime=false
