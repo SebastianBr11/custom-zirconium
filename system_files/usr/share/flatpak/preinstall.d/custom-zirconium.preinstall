@@ -1,0 +1,55 @@
+[Flatpak Preinstall org.gtk.Gtk3theme.adw-gtk3]
+Branch=stable
+IsRuntime=true
+
+[Flatpak Preinstall org.gtk.Gtk3theme.adw-gtk3-dark]
+Branch=stable
+IsRuntime=true
+
+[Flatpak Preinstall eu.betterbird.Betterbird]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall io.github.tobagin.karere]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall org.keepassxc.KeePassXC]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall com.nextcloud.desktopclient.nextcloud]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall md.obsidian.Obsidian]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall com.protonvpn.www]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall dev.diegovsky.Riff]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall org.gnome.Snapshot]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall io.github.martchus.syncthingtray]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall com.synology.SynologyDrive]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall dev.vencord.Vesktop]
+Branch=stable
+IsRuntime=false
+
+[Flatpak Preinstall org.zotero.Zotero]
+Branch=stable
+IsRuntime=false
