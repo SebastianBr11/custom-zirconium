@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+just -f /usr/share/custom-zirconium/just/00-start.just "${@}"
