@@ -21,3 +21,7 @@ install-kitty:
 uninstall-kitty:
     #!/usr/bin/env bash
     rm -rf ~/.local/kitty.app/
+
+find-wallpapers:
+    #!/usr/bin/env bash
+    open https://github.com/snowarch/iNiR-Walls/
