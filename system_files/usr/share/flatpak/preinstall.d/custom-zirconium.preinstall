@@ -42,6 +42,10 @@ IsRuntime=false
 Branch=stable
 IsRuntime=false
 
+[Flatpak Preinstall net.mullvad.MullvadBrowser]
+Branch=stable
+IsRuntime=false
+
 [Flatpak Preinstall com.nextcloud.desktopclient.nextcloud]
 Branch=stable
 IsRuntime=false
