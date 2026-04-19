@@ -1,6 +1,8 @@
 {
   "policies": {
     "Comment": "Comments can be added by just adding an extra entry. There will be an error in about:policies, but the policies will still work properly.",
+    "AutofillAddressEnabled": false,
+    "AutofillCreditCardEnabled": false,
     "EnableTrackingProtection": {
       "Value": true,
       "Locked": true,
