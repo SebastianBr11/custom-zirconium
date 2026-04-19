@@ -1,0 +1,119 @@
+{
+  "policies": {
+    "Comment": "Comments can be added by just adding an extra entry. There will be an error in about:policies, but the policies will still work properly.",
+    "EnableTrackingProtection": {
+      "Value": true,
+      "Locked": true,
+      "Cryptomining": true,
+      "Fingerprinting": true,
+      "EmailTracking": true,
+      "SuspectedFingerprinting": true,
+      "BaselineExceptions": true,
+      "ConvenienceExceptions": false
+    },
+    "ExtensionSettings": {
+      "*": {
+        "allowed_types": ["extension", "theme", "dictionary", "locale"]
+      },
+      "{446900e4-71c2-419f-a6a7-df9c091e268b}": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/{446900e4-71c2-419f-a6a7-df9c091e268b}/latest.xpi",
+        "Comment": "Bitwarden"
+      },
+      "7esoorv3@alefvanoon.anonaddy.me": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/7esoorv3@alefvanoon.anonaddy.me/latest.xpi"
+      },
+      "uBlock0@raymondhill.net": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/uBlock0@raymondhill.net/latest.xpi",
+        "private_browsing": true
+      },
+      "addon@darkreader.org": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/addon@darkreader.org/latest.xpi",
+        "private_browsing": true
+      },
+      "keepassxc-browser@keepassxc.org": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/keepassxc-browser@keepassxc.org/latest.xpi"
+      },
+      "{61a05c39-ad45-4086-946f-32adb0a40a9d}": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/{61a05c39-ad45-4086-946f-32adb0a40a9d}/latest.xpi",
+        "Comment": "Linkding extension"
+      },
+      "{19561335-5a63-4b4e-8182-1eced17f9b47}": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/{19561335-5a63-4b4e-8182-1eced17f9b47}/latest.xpi",
+        "Comment": "Linkding injector"
+      },
+      "clipper@obsidian.md": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/clipper@obsidian.md/latest.xpi"
+      },
+      "readeck@readeck.com": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/readeck@readeck.com/latest.xpi"
+      },
+      "{d7742d87-e61d-4b78-b8a1-b469842139fa}": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/{d7742d87-e61d-4b78-b8a1-b469842139fa}/latest.xpi",
+        "Comment": "Vimium"
+      },
+      "{6b733b82-9261-47ee-a595-2dda294a4d08}": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/{6b733b82-9261-47ee-a595-2dda294a4d08}/latest.xpi",
+        "Comment": "Yomitan"
+      },
+      "zotero@chnm.gmu.edu": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/zotero@chnm.gmu.edu/latest.xpi"
+      }
+    },
+    "FirefoxHome": {
+      "Search": true,
+      "TopSites": false,
+      "SponsoredTopSites": false,
+      "Highlights": false,
+      "Pocket": false,
+      "Stories": false,
+      "SponsoredPocket": false,
+      "SponsoredStories": false,
+      "Snippets": false,
+      "Locked": true
+    },
+    "GenerativeAI": {
+      "Enabled": false,
+      "Locked": true
+    },
+    "Homepage": {
+      "StartPage": "previous-session",
+      "Locked": true
+    },
+    "HttpsOnlyMode": "force_enabled",
+    "NoDefaultBookmarks": true,
+    "OfferToSaveLogins": false,
+    "OverrideFirstRunPage": "",
+    "OverrideFirstUpdatePage": "",
+    "PasswordManagerEnabled": false,
+    "SearchEngines": {
+      "Add": [
+        {
+          "Name": "Arch Wiki",
+          "URLTemplate": "https://wiki.archlinux.org/index.php?search={searchTerms}",
+          "IconURL": "https://wiki.archlinux.org/favicon.ico",
+          "Alias": "@archwiki"
+        },
+        {
+          "Name": "Flathub",
+          "URLTemplate": "https://flathub.org/en/apps/search?q={searchTerms}",
+          "IconURL": "https://dl.flathub.org/assets/_next/public/favicon.png",
+          "Alias": "@flathub"
+        }
+      ],
+      "Default": "DuckDuckGo",
+      "Remove": ["Google", "Bing", "Perplexity", "eBay"]
+    }
+  }
+}
