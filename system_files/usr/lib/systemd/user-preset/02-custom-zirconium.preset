@@ -1,2 +1,3 @@
 enable dms-plugins.service
 enable install-kitty.service
+enable setup-cz-dotfiles.service
