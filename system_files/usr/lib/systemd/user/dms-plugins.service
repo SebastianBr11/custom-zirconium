@@ -1,0 +1,14 @@
+[Unit]
+Description=Installs useful DMS plugins
+ConditionPathExists=!%h/.config/DankMaterialShell/plugins/
+
+[Service]
+ExecStart=dms plugins install calculator
+ExecStart=dms plugins install dankBatteryAlerts
+ExecStart=dms plugins install dankKDEConnect
+ExecStart=dms plugins install fullscreenPowerMenu
+Type=oneshot
+RemainAfterExit=true
+
+[Install]
+WantedBy=graphical-session-pre.target
