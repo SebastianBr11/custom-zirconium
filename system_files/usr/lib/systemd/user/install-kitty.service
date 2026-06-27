@@ -1,0 +1,11 @@
+[Unit]
+Description=Installs Kitty
+ConditionPathExists=!%h/.local/kitty.app/
+
+[Service]
+ExecStart=czjust install-kitty
+Type=oneshot
+RemainAfterExit=true
+
+[Install]
+WantedBy=graphical-session-pre.target

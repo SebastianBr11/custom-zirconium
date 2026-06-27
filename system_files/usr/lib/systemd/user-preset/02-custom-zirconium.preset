@@ -1,1 +1,2 @@
 enable dms-plugins.service
+enable install-kitty.service
