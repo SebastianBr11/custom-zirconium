@@ -10,6 +10,8 @@ input {
 
 binds {
   Mod+B { spawn "zen-browser"; }
+  // German keyboard can't type Mod+Slash
+  Mod+Shift+Slash { show-hotkey-overlay; }
 }
 
 window-rule {
