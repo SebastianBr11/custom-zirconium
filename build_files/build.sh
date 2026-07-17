@@ -21,6 +21,8 @@ dnf5 -y copr enable sneexy/zen-browser
 dnf5 -y install zen-browser
 dnf5 -y copr disable sneexy/zen-browser
 
+. /ctx/patch-zdots.sh
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
