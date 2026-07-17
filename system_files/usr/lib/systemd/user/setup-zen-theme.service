@@ -1,0 +1,22 @@
+[Unit]
+Description=Sets up Zen Browser to use the DMS theme
+ConditionPathExists=%h/.config/zen
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/bin/sh -c '
+set -e
+dir="$HOME/.config/zen"
+profile="$(find "$dir" -maxdepth 1 -type d -name "*Default (release)" 2>/dev/null | head -n 1)"
+[ -n "$profile" ] || exit 0
+link="$profile/chrome/userChrome.css"
+mkdir -p "$profile/chrome"
+# only create the symlink if it does not already exist
+if [ ! -e "$link" ]; then
+ln -s "$HOME/.config/DankMaterialShell/zen.css" "$link"
+fi
+'
+
+[Install]
+WantedBy=graphical-session-pre.target
