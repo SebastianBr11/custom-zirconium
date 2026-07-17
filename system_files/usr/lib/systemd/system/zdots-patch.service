@@ -1,0 +1,21 @@
+[Unit]
+Description=Patches zdots with custom settings
+ConditionPathExists=/usr/share/zirconium/zdots
+ConditionPathExists=!/var/lib/custom-zirconium/zdots-patched
+
+[Service]
+Environment="ZDOTS_DMS_SETTINGS=/usr/share/zirconium/zdots/dot_config/DankMaterialShell/settings.json"
+Environment="CUSTOM_DOTS_DMS_SETTINGS=/usr/share/custom-zirconium/cz-dotfiles/.config/DankMaterialShell/settings-patch.json"
+Environment="ZDOTS_DMS_SESSION=/usr/share/zirconium/zdots/private_dot_local/state/DankMaterialShell/session.json"
+Environment="CUSTOM_DOTS_DMS_SESSION=/usr/share/custom-zirconium/cz-dotfiles/.local/state/DankMaterialShell/session-patch.json"
+ExecStart=mkdir -p /var/lib/custom-zirconium
+# This will path the zdots DMS settings.json with the custom patch
+ExecStart=yq -n 'load(strenv(ZDOTS_DMS_SETTINGS)) * load(strenv(CUSTOM_DOTS_DMS_SETTINGS))' --prettyPrint -o json >> "$ZDOTS_DMS_SETTINGS"
+# This will path the zdots DMS session.json with the custom patch
+ExecStart=yq -n 'load(strenv(ZDOTS_DMS_SETTINGS)) * load(strenv(CUSTOM_DOTS_DMS_SETTINGS))' --prettyPrint -o json >> "$ZDOTS_DMS_SETTINGS"
+ExecStart=touch /var/lib/custom-zirconium/zdots-patched
+Type=oneshot
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
