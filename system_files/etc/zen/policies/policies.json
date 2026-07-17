@@ -1,6 +1,9 @@
 {
+  "$schema": "https://raw.githubusercontent.com/mozilla-firefox/firefox/main/browser/components/enterprisepolicies/schemas/policies-schema.json",
   "policies": {
     "Comment": "Comments can be added by just adding an extra entry. There will be an error in about:policies, but the policies will still work properly.",
+    "Comment2": "This website is also a nice reference: https://firefox-admin-docs.mozilla.org/",
+    "Comment3": "Also the schema at the top doesnt work correctly, it is only for the policies key.",
     "AutofillAddressEnabled": false,
     "AutofillCreditCardEnabled": false,
     "EnableTrackingProtection": {
@@ -95,6 +98,12 @@
     "OverrideFirstRunPage": "",
     "OverrideFirstUpdatePage": "",
     "PasswordManagerEnabled": false,
+    "Preferences": {
+      "toolkit.legacyUserProfileCustomizations.stylesheets": {
+        "Value": true,
+        "Status": "default"
+      }
+    },
     "SearchEngines": {
       "Add": [
         {
