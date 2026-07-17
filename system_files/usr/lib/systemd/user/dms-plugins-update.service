@@ -2,5 +2,5 @@
 Description=Updates DMS plugins
 
 [Service]
-ExecStart=dms plugins --all
+ExecStart=dms plugins update --all
 Type=oneshot
