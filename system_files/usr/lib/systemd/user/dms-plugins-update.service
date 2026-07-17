@@ -1,0 +1,6 @@
+[Unit]
+Description=Updates DMS plugins
+
+[Service]
+ExecStart=dms plugins --all
+Type=oneshot

@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer for DMS plugins Update
+# This service will only execute for a user with an existing plugins directory
+ConditionPathExists=%h/.config/DankMaterialShell/plugins/
+
+[Timer]
+OnBootSec=5m
+OnUnitInactiveSec=1d
+
+[Install]
+WantedBy=timers.target
