@@ -13,7 +13,8 @@ cp -avf "/ctx/system"/. /
 
 # this installs a package from fedora repos
 dnf5 install -y \
-  tmux
+  tmux \
+  yq
 
 # Can't use zen-browser from Flathub, since it wouldn't work well with KeepassXC
 dnf5 -y copr enable sneexy/zen-browser
