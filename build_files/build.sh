@@ -30,10 +30,6 @@ dnf5 -y copr disable sneexy/zen-browser
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-#### Example for enabling a System Unit File
-
-systemctl enable podman.socket
-
 # terra repos break bib's depsolver regardless (releasever mismatch inside
 # the builder container) — disable them outright.
 # Source: https://github.com/chulsaheng/techoos/blob/main/build_files/build.sh#L245
