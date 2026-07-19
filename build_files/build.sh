@@ -33,3 +33,13 @@ dnf5 -y copr disable sneexy/zen-browser
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+
+# terra repos break bib's depsolver regardless (releasever mismatch inside
+# the builder container) — disable them outright.
+# Source: https://github.com/chulsaheng/techoos/blob/main/build_files/build.sh#L245
+# See also: https://github.com/ublue-os/image-template/issues/196
+for repo in /etc/yum.repos.d/terra*.repo; do
+  [ -e "$repo" ] || continue
+  echo "Disabling $repo (terra repos break ISO depsolve)"
+  sed -i 's/^enabled[[:space:]]*=[[:space:]]*1/enabled=0/' "$repo"
+done
