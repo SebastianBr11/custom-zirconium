@@ -16,6 +16,13 @@ dnf5 install -y \
   tmux \
   yq
 
+# Use a COPR Example:
+#
+# dnf5 -y copr enable ublue-os/staging
+# dnf5 -y install package
+# Disable COPRs so they don't end up enabled on the final image:
+# dnf5 -y copr disable ublue-os/staging
+
 # Can't use zen-browser from Flathub, since it wouldn't work well with KeepassXC
 dnf5 -y copr enable sneexy/zen-browser
 dnf5 -y install zen-browser
@@ -23,12 +30,8 @@ dnf5 -y copr disable sneexy/zen-browser
 
 . /ctx/patch-zdots.sh
 
-# Use a COPR Example:
-#
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
-# Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
+systemctl preset-all
+systemctl preset-all --global
 
 # terra repos break bib's depsolver regardless (releasever mismatch inside
 # the builder container) — disable them outright.
