@@ -46,6 +46,10 @@ IsRuntime=false
 Branch=stable
 IsRuntime=false
 
+[Flatpak Preinstall io.gitlab.news_flash.NewsFlash]
+Branch=stable
+IsRuntime=false
+
 [Flatpak Preinstall com.nextcloud.desktopclient.nextcloud]
 Branch=stable
 IsRuntime=false
