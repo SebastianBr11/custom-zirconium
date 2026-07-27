@@ -13,7 +13,17 @@ input {
 binds {
   Mod+B { spawn "zen-browser"; }
   // German keyboard can't type Mod+Slash
-  Mod+Shift+Slash { show-hotkey-overlay; }
+  Mod+Shift+7 { show-hotkey-overlay; }
+
+  Mod+Ctrl+V { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
+
+  Mod+I { spawn "dms" "ipc" "call" "settings" "open"; }
+
+  Ctrl+Alt+Delete { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
+
+  Mod+Plus { set-column-width "+10%"; }
+
+  Mod+Shift+Plus { set-column-height: "+10%"; }
 }
 
 window-rule {
