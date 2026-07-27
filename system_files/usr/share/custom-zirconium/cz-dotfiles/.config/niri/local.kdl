@@ -1,3 +1,5 @@
+include optional=true "user-local.kdl"
+
 input {
   keyboard {
     repeat-delay 200
