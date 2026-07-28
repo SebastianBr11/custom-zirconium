@@ -6,6 +6,10 @@ IsRuntime=true
 Branch=stable
 IsRuntime=true
 
+[Flatpak Preinstall de.bund.ausweisapp.ausweisapp2]
+Branch=stable
+IsRuntime=false
+
 [Flatpak Preinstall org.gnome.baobab]
 Branch=stable
 IsRuntime=false
