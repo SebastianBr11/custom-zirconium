@@ -26,6 +26,10 @@ IsRuntime=false
 Branch=stable
 IsRuntime=false
 
+[Flatpak Preinstall nl.jknaapen.fladder]
+Branch=stable
+IsRuntime=false
+
 [Flatpak Preinstall com.github.tchx84.Flatseal]
 Branch=stable
 IsRuntime=false
