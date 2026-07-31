@@ -1,5 +1,4 @@
 enable dms-plugins-install.service
 enable dms-plugins-update.timer
 enable install-kitty.service
-enable setup-cz-dotfiles.service
 enable setup-zen-theme.service
