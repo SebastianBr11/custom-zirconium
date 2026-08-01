@@ -15,7 +15,7 @@ binds {
 
   Mod+Ctrl+V { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
 
-  Mod+I { spawn "dms" "ipc" "call" "settings" "open"; }
+  Mod+Shift+I { spawn "dms" "ipc" "call" "settings" "open"; }
 
   Ctrl+Alt+Delete { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
 
