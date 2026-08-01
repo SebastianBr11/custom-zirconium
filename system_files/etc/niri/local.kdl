@@ -1,3 +1,6 @@
+workspace "one"
+workspace "two"
+
 input {
   keyboard {
     repeat-delay 200
@@ -25,6 +28,13 @@ binds {
   Mod+Plus { set-column-width "+10%"; }
 
   Mod+Shift+Plus { set-window-height "+10%"; }
+}
+
+window-rule {
+  match app-id="betterbird"
+  open-on-workspace "two"
+
+  open-maximized true
 }
 
 window-rule {
