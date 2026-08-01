@@ -10,6 +10,9 @@ input {
 
 binds {
   Mod+B { spawn "zen-browser"; }
+  Mod+G { spawn "flatpak" "run" "eu.betterbird.Betterbird"; }
+  Mod+K { spawn "flatpak" "run" "org.keepassxc.KeePassXC"; }
+
   // German keyboard can't type Mod+Slash
   Mod+Shift+7 { show-hotkey-overlay; }
 
