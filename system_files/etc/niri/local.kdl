@@ -30,6 +30,11 @@ binds {
   Mod+Shift+Plus { set-window-height "+10%"; }
 }
 
+spawn-at-startup "flatpak" "run" "eu.betterbird.Betterbird"
+spawn-at-startup "flatpak" "run" "org.keepassxc.KeePassXC"
+spawn-at-startup "flatpak" "run" "io.github.martchus.syncthingtray" "--wait"
+spawn-at-startup "flatpak" "run" "com.synology.SynologyDrive"
+
 window-rule {
   match app-id="betterbird"
   open-on-workspace "two"
