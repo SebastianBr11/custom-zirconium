@@ -14,7 +14,8 @@ cp -avf "/ctx/system"/. /
 # this installs a package from fedora repos
 dnf5 install -y \
   tmux \
-  yq
+  yq \
+  clisp sbcl
 
 # Use a COPR Example:
 #
