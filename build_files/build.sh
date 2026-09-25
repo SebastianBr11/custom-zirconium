@@ -15,7 +15,8 @@ cp -avf "/ctx/system"/. /
 dnf5 install -y \
   tmux \
   yq \
-  clisp sbcl
+  clisp sbcl \
+  zenity
 
 # Use a COPR Example:
 #
