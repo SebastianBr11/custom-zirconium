@@ -16,7 +16,8 @@ dnf5 install -y \
   tmux \
   yq \
   clisp sbcl \
-  zenity
+  zenity \
+  podman-compose
 
 # Use a COPR Example:
 #
